@@ -1,2 +1,4 @@
 # clojure-guest-book
-a little guest book, written in clojure
+
+Following this tutorial [here](https://kit-clj.github.io/docs/guestbook.html). 
+
