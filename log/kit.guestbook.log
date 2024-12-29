@@ -47,3 +47,24 @@
 2024-12-29 16:29:02,990 [main] INFO  kit.edge.server.undertow - server started on port 3000 
 2024-12-29 16:29:02,990 [main] INFO  kit.edge.utils.repl - REPL server started on host: 0.0.0.0 port: 7000 
 2024-12-29 16:29:45,760 [XNIO-2 task-1] DEBUG k.g.web.controllers.guestbook - saving message deb testing testing 
+2024-12-29 16:27:12,380 [ForkJoinPool.commonPool-worker-1] DEBUG io.methvin.watcher.DirectoryWatcher - -> CREATE [/Users/deblina/Downloads/clojure-guest-book/.cpcache/1226814550.main] (isDirectory: false) 
+2024-12-29 16:26:20,238 [ForkJoinPool.commonPool-worker-1] DEBUG io.methvin.watcher.DirectoryWatcher - -> MODIFY [/Users/deblina/Downloads/clojure-guest-book/log/kit.guestbook.log] (isDirectory: false) 
+2024-12-29 16:30:27,035 [ForkJoinPool.commonPool-worker-1] DEBUG io.methvin.watcher.DirectoryWatcher - ENTRY_MODIFY [/Users/deblina/Downloads/clojure-guest-book/.cpcache/1226814550.main] 
+2024-12-29 16:30:27,035 [ForkJoinPool.commonPool-worker-1] DEBUG io.methvin.watcher.DirectoryWatcher - ENTRY_MODIFY [/Users/deblina/Downloads/clojure-guest-book/.git/index] 
+2024-12-29 16:30:27,036 [ForkJoinPool.commonPool-worker-1] DEBUG io.methvin.watcher.DirectoryWatcher - -> MODIFY [/Users/deblina/Downloads/clojure-guest-book/.git/index] (isDirectory: false) 
+2024-12-29 16:30:27,036 [ForkJoinPool.commonPool-worker-1] DEBUG io.methvin.watcher.DirectoryWatcher - ENTRY_MODIFY [/Users/deblina/Downloads/clojure-guest-book/.git/index] 
+2024-12-29 16:30:27,036 [ForkJoinPool.commonPool-worker-1] DEBUG io.methvin.watcher.DirectoryWatcher - ENTRY_MODIFY [/Users/deblina/Downloads/clojure-guest-book/.gitignore] 
+2024-12-29 16:30:27,035 [ForkJoinPool.commonPool-worker-1] DEBUG io.methvin.watcher.DirectoryWatcher - ENTRY_MODIFY [/Users/deblina/Downloads/clojure-guest-book/log/kit.guestbook.log] 
+2024-12-29 16:30:27,036 [ForkJoinPool.commonPool-worker-1] DEBUG io.methvin.watcher.DirectoryWatcher - -> MODIFY [/Users/deblina/Downloads/clojure-guest-book/.gitignore] (isDirectory: false) 
+2024-12-29 16:30:27,036 [ForkJoinPool.commonPool-worker-1] DEBUG io.methvin.watcher.DirectoryWatcher - ENTRY_MODIFY [/Users/deblina/Downloads/clojure-guest-book/.git/index] 
+2024-12-29 16:30:27,037 [ForkJoinPool.commonPool-worker-1] DEBUG io.methvin.watcher.DirectoryWatcher - ENTRY_MODIFY [/Users/deblina/Downloads/clojure-guest-book/.git/index] 
+2024-12-29 16:30:27,037 [ForkJoinPool.commonPool-worker-1] DEBUG io.methvin.watcher.DirectoryWatcher - -> MODIFY [/Users/deblina/Downloads/clojure-guest-book/log/kit.guestbook.log] (isDirectory: false) 
+2024-12-29 16:30:27,037 [ForkJoinPool.commonPool-worker-1] DEBUG io.methvin.watcher.DirectoryWatcher - ENTRY_MODIFY [/Users/deblina/Downloads/clojure-guest-book/.gitignore] 
+2024-12-29 16:30:27,037 [ForkJoinPool.commonPool-worker-1] DEBUG io.methvin.watcher.DirectoryWatcher - ENTRY_CREATE [/Users/deblina/Downloads/clojure-guest-book/guestbook_dev.db] 
+2024-12-29 16:30:27,037 [ForkJoinPool.commonPool-worker-1] DEBUG io.methvin.watcher.DirectoryWatcher - ENTRY_MODIFY [/Users/deblina/Downloads/clojure-guest-book/.gitignore] 
+2024-12-29 16:30:27,037 [ForkJoinPool.commonPool-worker-1] DEBUG io.methvin.watcher.DirectoryWatcher - ENTRY_MODIFY [/Users/deblina/Downloads/clojure-guest-book/.gitignore] 
+2024-12-29 16:30:27,037 [ForkJoinPool.commonPool-worker-1] DEBUG io.methvin.watcher.DirectoryWatcher - ENTRY_MODIFY [/Users/deblina/Downloads/clojure-guest-book/.gitignore] 
+2024-12-29 16:30:27,038 [ForkJoinPool.commonPool-worker-1] DEBUG io.methvin.watcher.DirectoryWatcher - ENTRY_MODIFY [/Users/deblina/Downloads/clojure-guest-book/.gitignore] 
+2024-12-29 16:30:27,038 [ForkJoinPool.commonPool-worker-1] DEBUG io.methvin.watcher.DirectoryWatcher - ENTRY_MODIFY [/Users/deblina/Downloads/clojure-guest-book/.gitignore] 
+2024-12-29 16:30:27,038 [ForkJoinPool.commonPool-worker-1] DEBUG io.methvin.watcher.DirectoryWatcher - -> CREATE [/Users/deblina/Downloads/clojure-guest-book/guestbook_dev.db] (isDirectory: false) 
+2024-12-29 16:30:27,038 [ForkJoinPool.commonPool-worker-1] DEBUG io.methvin.watcher.DirectoryWatcher - ENTRY_MODIFY [/Users/deblina/Downloads/clojure-guest-book/guestbook_dev.db] 
