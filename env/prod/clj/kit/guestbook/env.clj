@@ -3,10 +3,10 @@
 
 (def defaults
   {:init       (fn []
-                 (log/info "\n-=[guestbook starting]=-"))
-   :start      (fn []
-                 (log/info "\n-=[guestbook started successfully]=-"))
+                 (log/info "\n-=[ starting]=-"))
+   :started    (fn []
+                 (log/info "\n-=[ started successfully]=-"))
    :stop       (fn []
-                 (log/info "\n-=[guestbook has shut down successfully]=-"))
+                 (log/info "\n-=[ has shut down successfully]=-"))
    :middleware (fn [handler _] handler)
    :opts       {:profile :prod}})

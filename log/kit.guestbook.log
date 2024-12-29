@@ -1,86 +1,49 @@
-2024-12-29 14:48:46,696 [nREPL-session-4c6b191f-954f-4f86-8a9c-3d69235e4883] INFO  kit.config - Reading config system.edn 
-2024-12-29 14:48:46,763 [nREPL-session-4c6b191f-954f-4f86-8a9c-3d69235e4883] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
-2024-12-29 14:48:46,771 [nREPL-session-4c6b191f-954f-4f86-8a9c-3d69235e4883] INFO  org.xnio - XNIO version 3.8.8.Final 
-2024-12-29 14:48:46,846 [nREPL-session-4c6b191f-954f-4f86-8a9c-3d69235e4883] DEBUG org.xnio - Creating worker:null, pool size:64, max pool size:64, keep alive:60000, io threads:8, stack size:0 
-2024-12-29 14:48:46,853 [nREPL-session-4c6b191f-954f-4f86-8a9c-3d69235e4883] INFO  org.jboss.threads - JBoss Threads version 3.5.0.Final 
-2024-12-29 14:48:46,897 [nREPL-session-4c6b191f-954f-4f86-8a9c-3d69235e4883] INFO  kit.edge.server.undertow - server started on port 3000 
-2024-12-29 14:57:19,164 [main] INFO  kit.config - Reading config system.edn 
-2024-12-29 14:57:19,247 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
-2024-12-29 14:57:19,255 [main] INFO  org.xnio - XNIO version 3.8.8.Final 
-2024-12-29 14:57:19,319 [main] DEBUG org.xnio - Creating worker:null, pool size:64, max pool size:64, keep alive:60000, io threads:8, stack size:0 
-2024-12-29 14:57:19,327 [main] INFO  org.jboss.threads - JBoss Threads version 3.5.0.Final 
-2024-12-29 14:57:19,372 [main] ERROR kit.edge.server.undertow - server failed to start on port: 3000 
-java.lang.RuntimeException: java.net.BindException: Address already in use
-	at io.undertow.Undertow.start(Undertow.java:254)
-	at ring.adapter.undertow$run_undertow.invokeStatic(undertow.clj:170)
-	at ring.adapter.undertow$run_undertow.invoke(undertow.clj:123)
-	at kit.edge.server.undertow$start.invokeStatic(undertow.clj:9)
-	at kit.edge.server.undertow$start.invoke(undertow.clj:7)
-	at kit.edge.server.undertow$eval13981$fn__13982.invoke(undertow.clj:29)
-	at clojure.lang.MultiFn.invoke(MultiFn.java:234)
-	at integrant.core$try_build_action.invokeStatic(core.cljc:332)
-	at integrant.core$try_build_action.invoke(core.cljc:331)
-	at integrant.core$build_key.invokeStatic(core.cljc:340)
-	at integrant.core$build_key.invoke(core.cljc:336)
-	at clojure.core$partial$fn__5931.invoke(core.clj:2656)
-	at clojure.core.protocols$fn__8275.invokeStatic(protocols.clj:167)
-	at clojure.core.protocols$fn__8275.invoke(protocols.clj:123)
-	at clojure.core.protocols$fn__8229$G__8224__8238.invoke(protocols.clj:19)
-	at clojure.core.protocols$seq_reduce.invokeStatic(protocols.clj:31)
-	at clojure.core.protocols$fn__8262.invokeStatic(protocols.clj:74)
-	at clojure.core.protocols$fn__8262.invoke(protocols.clj:74)
-	at clojure.core.protocols$fn__8203$G__8198__8216.invoke(protocols.clj:13)
-	at clojure.core$reduce.invokeStatic(core.clj:6965)
-	at clojure.core$reduce.invoke(core.clj:6947)
-	at integrant.core$build.invokeStatic(core.cljc:364)
-	at integrant.core$build.invoke(core.cljc:343)
-	at integrant.core$init.invokeStatic(core.cljc:530)
-	at integrant.core$init.invoke(core.cljc:522)
-	at integrant.core$init.invokeStatic(core.cljc:527)
-	at integrant.core$init.invoke(core.cljc:522)
-	at integrant.repl$init_system$fn__3997.invoke(repl.clj:37)
-	at integrant.repl$build_system.invokeStatic(repl.clj:24)
-	at integrant.repl$build_system.invoke(repl.clj:22)
-	at integrant.repl$init_system.invokeStatic(repl.clj:34)
-	at integrant.repl$init_system.invoke(repl.clj:33)
-	at integrant.repl$init$fn__4009.invoke(repl.clj:54)
-	at clojure.lang.AFn.applyToHelper(AFn.java:154)
-	at clojure.lang.AFn.applyTo(AFn.java:144)
-	at clojure.lang.Var.alterRoot(Var.java:310)
-	at clojure.core$alter_var_root.invokeStatic(core.clj:5563)
-	at clojure.core$alter_var_root.doInvoke(core.clj:5558)
-	at clojure.lang.RestFn.invoke(RestFn.java:428)
-	at integrant.repl$init.invokeStatic(repl.clj:52)
-	at integrant.repl$init.invoke(repl.clj:49)
-	at integrant.repl$go.invokeStatic(repl.clj:61)
-	at integrant.repl$go.invoke(repl.clj:57)
-	at integrant.repl$go.invokeStatic(repl.clj:58)
-	at integrant.repl$go.invoke(repl.clj:57)
-	at user$eval25322.invokeStatic(NO_SOURCE_FILE:1)
-	at user$eval25322.invoke(NO_SOURCE_FILE:1)
-	at clojure.lang.Compiler.eval(Compiler.java:7700)
-	at clojure.lang.Compiler.eval(Compiler.java:7655)
-	at clojure.core$eval.invokeStatic(core.clj:3232)
-	at clojure.core$eval.invoke(core.clj:3228)
-	at clojure.main$repl$read_eval_print__9244$fn__9247.invoke(main.clj:437)
-	at clojure.main$repl$read_eval_print__9244.invoke(main.clj:437)
-	at clojure.main$repl$fn__9253.invoke(main.clj:459)
-	at clojure.main$repl.invokeStatic(main.clj:459)
-	at clojure.main$repl_opt.invokeStatic(main.clj:523)
-	at clojure.main$main.invokeStatic(main.clj:668)
-	at clojure.main$main.doInvoke(main.clj:617)
-	at clojure.lang.RestFn.invoke(RestFn.java:400)
-	at clojure.lang.AFn.applyToHelper(AFn.java:152)
-	at clojure.lang.RestFn.applyTo(RestFn.java:135)
-	at clojure.lang.Var.applyTo(Var.java:707)
-	at clojure.main.main(main.java:40)
-Caused by: java.net.BindException: Address already in use
-	at java.base/sun.nio.ch.Net.bind0(Native Method)
-	at java.base/sun.nio.ch.Net.bind(Net.java:565)
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344)
-	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301)
-	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89)
-	at org.xnio.nio.NioXnioWorker.createTcpConnectionServer(NioXnioWorker.java:178)
-	at org.xnio.XnioWorker.createStreamConnectionServer(XnioWorker.java:310)
-	at io.undertow.Undertow.start(Undertow.java:196)
-	... 62 common frames omitted
+2024-12-29 16:26:20,237 [ForkJoinPool.commonPool-worker-1] DEBUG io.methvin.watcher.DirectoryWatcher - ENTRY_CREATE [/Users/deblina/Downloads/clojure-guest-book/log] 
+2024-12-29 16:26:20,238 [ForkJoinPool.commonPool-worker-1] DEBUG io.methvin.watcher.DirectoryWatcher - -> CREATE [/Users/deblina/Downloads/clojure-guest-book/log] (isDirectory: true) 
+2024-12-29 16:26:20,238 [ForkJoinPool.commonPool-worker-1] DEBUG io.methvin.watcher.DirectoryWatcher - ENTRY_CREATE [/Users/deblina/Downloads/clojure-guest-book/log/kit.guestbook.log] 
+2024-12-29 16:26:20,238 [ForkJoinPool.commonPool-worker-1] DEBUG io.methvin.watcher.DirectoryWatcher - -> CREATE [/Users/deblina/Downloads/clojure-guest-book/log/kit.guestbook.log] (isDirectory: false) 
+2024-12-29 16:26:20,238 [ForkJoinPool.commonPool-worker-1] DEBUG io.methvin.watcher.DirectoryWatcher - ENTRY_MODIFY [/Users/deblina/Downloads/clojure-guest-book/log/kit.guestbook.log] 
+2024-12-29 16:26:36,473 [nREPL-session-6dd0a070-7cb0-4e7f-9cbb-ad50ab729b28] INFO  kit.config - Reading config system.edn 
+2024-12-29 16:26:36,488 [nREPL-session-6dd0a070-7cb0-4e7f-9cbb-ad50ab729b28] INFO  migratus.core - Starting migrations 
+2024-12-29 16:26:36,491 [nREPL-session-6dd0a070-7cb0-4e7f-9cbb-ad50ab729b28] INFO  migratus.database - creating migration table 'schema_migrations' 
+2024-12-29 16:26:36,497 [nREPL-session-6dd0a070-7cb0-4e7f-9cbb-ad50ab729b28] DEBUG migratus.migrations - Looking for migrations in #object[java.io.File 0x322b0acc /Users/deblina/Downloads/clojure-guest-book/resources/migrations] 
+2024-12-29 16:26:36,502 [nREPL-session-6dd0a070-7cb0-4e7f-9cbb-ad50ab729b28] INFO  migratus.core - Running up for [20220104235847] 
+2024-12-29 16:26:36,502 [nREPL-session-6dd0a070-7cb0-4e7f-9cbb-ad50ab729b28] INFO  migratus.core - Up 20220104235847-add-guestbook-table 
+2024-12-29 16:26:36,507 [nREPL-session-6dd0a070-7cb0-4e7f-9cbb-ad50ab729b28] INFO  migratus.database - Connection is  {:connection #object[com.zaxxer.hikari.pool.HikariProxyConnection 0x5dcdb589 HikariProxyConnection@1573762441 wrapping org.sqlite.jdbc4.JDBC4Connection@61c1332f]} Config is {:db {:datasource #object[com.zaxxer.hikari.HikariDataSource 0x2c358e0b HikariDataSource (HikariPool-2)]}, :store :database, :migrate-on-init? true} 
+2024-12-29 16:26:36,511 [nREPL-session-6dd0a070-7cb0-4e7f-9cbb-ad50ab729b28] DEBUG migratus.migration.sql - found 1 up migrations 
+2024-12-29 16:26:36,516 [nREPL-session-6dd0a070-7cb0-4e7f-9cbb-ad50ab729b28] DEBUG migratus.database - marking 20220104235847 complete 
+2024-12-29 16:26:36,518 [nREPL-session-6dd0a070-7cb0-4e7f-9cbb-ad50ab729b28] INFO  migratus.core - Ending migrations 
+2024-12-29 16:26:37,002 [ForkJoinPool.commonPool-worker-1] DEBUG io.methvin.watcher.DirectoryWatcher - ENTRY_CREATE [/Users/deblina/Downloads/clojure-guest-book/guestbook_dev.db] 
+2024-12-29 16:26:37,008 [ForkJoinPool.commonPool-worker-1] DEBUG io.methvin.watcher.DirectoryWatcher - -> CREATE [/Users/deblina/Downloads/clojure-guest-book/guestbook_dev.db] (isDirectory: false) 
+2024-12-29 16:26:37,008 [ForkJoinPool.commonPool-worker-1] DEBUG io.methvin.watcher.DirectoryWatcher - ENTRY_MODIFY [/Users/deblina/Downloads/clojure-guest-book/guestbook_dev.db] 
+2024-12-29 16:26:37,009 [ForkJoinPool.commonPool-worker-1] DEBUG io.methvin.watcher.DirectoryWatcher - ENTRY_MODIFY [/Users/deblina/Downloads/clojure-guest-book/guestbook_dev.db] 
+2024-12-29 16:27:12,377 [ForkJoinPool.commonPool-worker-1] DEBUG io.methvin.watcher.DirectoryWatcher - ENTRY_MODIFY [/Users/deblina/Downloads/clojure-guest-book/.cpcache/1226814550.cp] 
+2024-12-29 16:27:12,378 [ForkJoinPool.commonPool-worker-1] DEBUG io.methvin.watcher.DirectoryWatcher - -> MODIFY [/Users/deblina/Downloads/clojure-guest-book/.cpcache/1226814550.cp] (isDirectory: false) 
+2024-12-29 16:27:12,378 [ForkJoinPool.commonPool-worker-1] DEBUG io.methvin.watcher.DirectoryWatcher - ENTRY_MODIFY [/Users/deblina/Downloads/clojure-guest-book/.cpcache/1226814550.basis] 
+2024-12-29 16:27:12,379 [ForkJoinPool.commonPool-worker-1] DEBUG io.methvin.watcher.DirectoryWatcher - -> MODIFY [/Users/deblina/Downloads/clojure-guest-book/.cpcache/1226814550.basis] (isDirectory: false) 
+2024-12-29 16:27:12,379 [ForkJoinPool.commonPool-worker-1] DEBUG io.methvin.watcher.DirectoryWatcher - ENTRY_CREATE [/Users/deblina/Downloads/clojure-guest-book/.cpcache/1226814550.main] 
+2024-12-29 16:28:14,120 [main] INFO  kit.config - Reading config system.edn 
+2024-12-29 16:28:14,383 [main] INFO  migratus.core - Starting migrations 
+2024-12-29 16:28:14,395 [main] DEBUG migratus.migrations - Looking for migrations in #object[java.io.File 0x2175ecb4 /Users/deblina/Downloads/clojure-guest-book/resources/migrations] 
+2024-12-29 16:28:14,398 [main] INFO  migratus.core - Ending migrations 
+2024-12-29 16:28:14,466 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2024-12-29 16:28:14,473 [main] INFO  org.xnio - XNIO version 3.8.4.Final 
+2024-12-29 16:28:14,535 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final 
+2024-12-29 16:28:14,579 [main] INFO  kit.edge.server.undertow - server started on port 3000 
+2024-12-29 16:28:14,581 [main] INFO  kit.edge.utils.repl - REPL server started on host: 0.0.0.0 port: 7000 
+2024-12-29 16:28:54,565 [main] INFO  kit.edge.utils.repl - REPL server stopped 
+2024-12-29 16:28:54,633 [main] INFO  kit.config - Reading config system.edn 
+2024-12-29 16:28:54,651 [main] INFO  kit.ig-utils - :db.sql/connection resume check. Same? true 
+2024-12-29 16:28:54,652 [main] INFO  migratus.core - Starting migrations 
+2024-12-29 16:28:54,652 [main] DEBUG migratus.migrations - Looking for migrations in #object[java.io.File 0x87814f1 /Users/deblina/Downloads/clojure-guest-book/resources/migrations] 
+2024-12-29 16:28:54,653 [main] INFO  migratus.core - Ending migrations 
+2024-12-29 16:28:54,660 [main] INFO  kit.edge.utils.repl - REPL server started on host: 0.0.0.0 port: 7000 
+2024-12-29 16:28:59,696 [main] INFO  kit.edge.utils.repl - REPL server stopped 
+2024-12-29 16:28:59,701 [main] INFO  kit.edge.server.undertow - HTTP server stopped 
+2024-12-29 16:29:02,973 [main] INFO  kit.config - Reading config system.edn 
+2024-12-29 16:29:02,981 [main] INFO  migratus.core - Starting migrations 
+2024-12-29 16:29:02,981 [main] DEBUG migratus.migrations - Looking for migrations in #object[java.io.File 0xbbeb347 /Users/deblina/Downloads/clojure-guest-book/resources/migrations] 
+2024-12-29 16:29:02,982 [main] INFO  migratus.core - Ending migrations 
+2024-12-29 16:29:02,990 [main] INFO  kit.edge.server.undertow - server started on port 3000 
+2024-12-29 16:29:02,990 [main] INFO  kit.edge.utils.repl - REPL server started on host: 0.0.0.0 port: 7000 
+2024-12-29 16:29:45,760 [XNIO-2 task-1] DEBUG k.g.web.controllers.guestbook - saving message deb testing testing 
