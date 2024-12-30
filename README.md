@@ -5,7 +5,9 @@ tutorial [here](https://kit-clj.github.io/docs/guestbook.html).
 
 TODO: 
 - [ ] Deploy this 
-
+- [ ] Add the ability to edit the message
+- [ ] Fix the styling to match my website
+--------
 Start a REPL in your editor or terminal of choice.
 
 Start the server with:
@@ -22,7 +24,7 @@ Reload changes:
 ```clojure
 (reset)
 ```
-
+-------
 Here's the directory structure: 
 
 ```
